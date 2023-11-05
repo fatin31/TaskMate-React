@@ -1,6 +1,7 @@
-import { Header } from "./components/Header";
-import { AddTask } from "./components/Addtask";
-import { ShowTask } from "./components/Showtask";
+
+import { Addtask } from "./components/Addtask";
+import {Showtask} from "./components/Showtask";
+import {Header} from './components/Header';
 
 import './App.css';
 
@@ -8,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <AddTask />
-      <ShowTask />
+      <Addtask />
+      <Showtask />
     </div>
   );
 }
