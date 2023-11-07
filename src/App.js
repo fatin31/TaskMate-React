@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import {useState } from "react";
 
 import { Addtask } from "./components/Addtask";
 import {Showtask} from "./components/Showtask";
@@ -9,14 +9,16 @@ import './App.css';
 
 
 function App() {
-  const [tasklist,setTasklist]= useState([]);
+  const [tasklist, setTasklist] = useState([]);
+  const [task,setTask] = useState([]);
+
 
 
   return (
     <div className="App">
       <Header />
-      <Addtask tasklist={tasklist} setTasklist={setTasklist} />
-      <Showtask tasklist={tasklist} setTasklist={setTasklist}  />
+      <Addtask tasklist={tasklist} setTasklist={setTasklist} task={task} setTask={setTask} />
+      <Showtask tasklist={tasklist} setTasklist={setTasklist}task={task} setTask={setTask}  />
     </div>
   );
 }
